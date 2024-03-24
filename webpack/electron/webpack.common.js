@@ -2,7 +2,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require('webpack');
 const path = require("node:path");
-const ElectronReloadPlugin = require('webpack-electron-reload')
 
 const rootDir = path.resolve('./');
 console.log('testes', path.resolve(__dirname, rootDir + "/core/app/init.ts"))
@@ -21,10 +20,5 @@ module.exports = {
 			include: /core\/app\/.*$/,
 			use: [{ loader: 'ts-loader' }]
 		}]
-	},
-	plugins: [
-		ElectronReloadPlugin()({
-			path: path.join(__dirname, './dist/main.js')
-		})
-	]
+	}
 }
