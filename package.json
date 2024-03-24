@@ -1,5 +1,5 @@
 {
-	"name": "webpack",
+	"name": "electron-boilerplate",
 	"version": "1.0.0",
 	"description": "",
 	"main": "./dist/app/init.js",
