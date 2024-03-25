@@ -1,4 +1,6 @@
 node_modules
+package-lock.js
+electron-builder.yml
 # Logs
 logs
 *.log
